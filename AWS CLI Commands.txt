@@ -1,0 +1,29 @@
+To see all commands associated with a Service:
+aws s3 help
+
+Get Instance Meta-data
+curl http://169.254.169.254/latest/meta-data/
+
+Create bucket:
+aws s3api create-bucket --bucket day4bucket --region us-east-1
+
+List all buckets in account:
+aws S3 ls
+or
+aws s3api list-buckets --query "Buckets[].Name"
+
+List contents of Specified bucket:
+aws s3api list-objects --bucket yccloudfront --query 'Contents[].{Key: Key, Size: Size}'
+
+
+Copy Objects between buckets (entire content of bucket):
+aws s3 sync s3://yccloudfront s3://yctestcli
+
+Copying a file from S3 bucket to another S3 bucket
+aws s3 cp s3://mybucket/test.txt s3://mybucket/test2.txt
+
+Delete Entire bucket:
+aws s3api delete-bucket --bucket ycdelete --region us-east-1
+
+Delete Objects in bucket:
+aws s3api delete-object --bucket yctestcli --key Yescertified

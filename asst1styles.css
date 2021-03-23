@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:serif;
+  background-color: #0095D6;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight:300;
+  text-shadow: -2px 2px black;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.header {
+  display: flex;
+  background: #010B7F;
+  color: white;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+  background-color: whitesmoke;
+}
+
+.one p {
+  background: #32EDAF;
+  border-radius: 4px;
+  padding: 15px;
+  flex: 0 1 auto;
+  border: solid 1px transparent;
+}
+
+.image {
+  width: 100px;
+  border-radius: 4px;
+  border:solid 1px rgb(0, 0, 0)
+} 
+
+.two {
+  flex: 0 2 auto;
+  border-radius: 4px;
+  background: white;
+  padding: 15px;
+  border: dashed 1px orange
+}
+.jobtitle {
+   font-family:"Vollkorn", serif;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 1.2res;
+}
+
+@media screen and (min-width:1000px) {
+   .container {
+       justify-content:center;
+   }
+}
+
+.one {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex: 1 0 auto;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 0;
+   margin-bottom: 15px
+}
+
+.one p {
+   margin:15px 0 0 0;
+}
